@@ -577,6 +577,7 @@ export default class Scrollbars extends Component {
                 { key: 'view', ref: (ref) => { this.view = ref; } },
                 scrollBarAlwaysShow() ? children :
                 createElement('div', { style: {
+                    flex: 1,
                     height: innerHeight,
                     paddingBottom: scrollbarWidth,
                     paddingRight: scrollbarWidth
