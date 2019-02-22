@@ -509,6 +509,7 @@ export default class Scrollbars extends Component {
             autoHeightMax,
             style,
             children,
+            innerHeight,
             ...props
         } = this.props;
         /* eslint-enable no-unused-vars */
@@ -576,9 +577,11 @@ export default class Scrollbars extends Component {
                 { key: 'view', ref: (ref) => { this.view = ref; } },
                 scrollBarAlwaysShow() ? children :
                 createElement('div', { style: {
-                  float: 'left',
-                  paddingRight: scrollbarWidth,
-                  paddingBottom: scrollbarWidth
+                    height: innerHeight,
+                    float: 'left',
+                    paddingBottom: scrollbarWidth,
+                    paddingRight: scrollbarWidth,
+                    width: `calc(100% -${scrollbarWidth}px)`,
                 } }, children)
             ),
             cloneElement(
@@ -616,6 +619,10 @@ Scrollbars.propTypes = {
     thumbSize: PropTypes.number,
     thumbMinSize: PropTypes.number,
     hideTracksWhenNotNeeded: PropTypes.bool,
+    innerHeight: PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.string
+    ]),
     autoHide: PropTypes.bool,
     autoHideTimeout: PropTypes.number,
     autoHideDuration: PropTypes.number,
@@ -642,6 +649,7 @@ Scrollbars.defaultProps = {
     tagName: 'div',
     thumbMinSize: 30,
     hideTracksWhenNotNeeded: false,
+    innerHeight: undefined,
     autoHide: false,
     autoHideTimeout: 1000,
     autoHideDuration: 200,
