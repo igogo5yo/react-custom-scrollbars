@@ -1,6 +1,6 @@
 {
   "name": "react-customized-scrollbars",
-  "version": "4.3.1",
+  "version": "4.3.2",
   "description": "React scrollbars component forked from react-custom-scrollbars + fixes",
   "main": "lib/index.js",
   "scripts": {

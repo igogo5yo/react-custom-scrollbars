@@ -578,10 +578,8 @@ export default class Scrollbars extends Component {
                 scrollBarAlwaysShow() ? children :
                 createElement('div', { style: {
                     height: innerHeight,
-                    float: 'left',
                     paddingBottom: scrollbarWidth,
-                    paddingRight: scrollbarWidth,
-                    width: `calc(100% - ${scrollbarWidth}px)`,
+                    paddingRight: scrollbarWidth
                 } }, children)
             ),
             cloneElement(
