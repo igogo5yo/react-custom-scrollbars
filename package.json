@@ -1,7 +1,7 @@
 {
-  "name": "react-custom-scrollbars",
+  "name": "react-customized-scrollbars",
   "version": "4.2.1",
-  "description": "React scrollbars component",
+  "description": "React scrollbars component forked from react-custom-scrollbars + fixes",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib dist",

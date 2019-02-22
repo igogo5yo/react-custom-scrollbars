@@ -2,7 +2,7 @@ import css from 'dom-css';
 let scrollbarWidth = false;
 
 export function actualBarWidth() {
-  let result = 0
+  let result = 0;
   /* istanbul ignore else */
   if (typeof document !== 'undefined') {
     const div = document.createElement('div');
@@ -18,11 +18,14 @@ export function actualBarWidth() {
     result = (div.offsetWidth - div.clientWidth);
     document.body.removeChild(div);
   }
-  return result
+  return result;
 }
 
 export default function getScrollbarWidth() {
-  if (scrollbarWidth !== false)
+  if (scrollbarWidth !== false) {
     return scrollbarWidth;
-  return scrollbarWidth = actualBarWidth() || 20
+  }
+
+  scrollbarWidth = actualBarWidth() || 20;
+  return scrollbarWidth;
 }

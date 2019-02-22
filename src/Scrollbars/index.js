@@ -575,11 +575,11 @@ export default class Scrollbars extends Component {
                 renderView({ style: viewStyle }),
                 { key: 'view', ref: (ref) => { this.view = ref; } },
                 scrollBarAlwaysShow() ? children :
-                createElement('div', {style: {
-                  float: 'left', 
-                  paddingRight: scrollbarWidth, 
+                createElement('div', { style: {
+                  float: 'left',
+                  paddingRight: scrollbarWidth,
                   paddingBottom: scrollbarWidth
-                }}, children)
+                } }, children)
             ),
             cloneElement(
                 renderTrackHorizontal({ style: trackHorizontalStyle }),

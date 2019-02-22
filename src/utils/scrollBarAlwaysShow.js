@@ -1,5 +1,5 @@
-import {actualBarWidth} from './getScrollbarWidth'
+import { actualBarWidth } from './getScrollbarWidth';
 
-export default function scrollBarAlwaysShow(){
-  return !!actualBarWidth()
+export default function scrollBarAlwaysShow() {
+  return !!actualBarWidth();
 }
