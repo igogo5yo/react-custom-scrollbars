@@ -22,10 +22,10 @@ export function actualBarWidth() {
 }
 
 export default function getScrollbarWidth() {
-  if (scrollbarWidth !== false) {
+  if (!scrollbarWidth !== false) {
     return scrollbarWidth;
   }
 
-  scrollbarWidth = actualBarWidth() || 20;
+  scrollbarWidth = actualBarWidth() || 0;
   return scrollbarWidth;
 }
