@@ -581,7 +581,7 @@ export default class Scrollbars extends Component {
                     float: 'left',
                     paddingBottom: scrollbarWidth,
                     paddingRight: scrollbarWidth,
-                    width: `calc(100% -${scrollbarWidth}px)`,
+                    width: `calc(100% - ${scrollbarWidth}px)`,
                 } }, children)
             ),
             cloneElement(
