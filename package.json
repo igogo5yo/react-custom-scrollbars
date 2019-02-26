@@ -1,13 +1,13 @@
 {
   "name": "react-customized-scrollbars",
   "version": "4.3.3",
-  "description": "React scrollbars component forked from react-custom-scrollbars + fixes",
+  "description": "React scrollbars component forked from react-customized-scrollbars + fixes",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib dist",
     "build": "babel src --out-dir lib",
-    "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/react-custom-scrollbars.js",
-    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/react-custom-scrollbars.min.js",
+    "build:umd": "cross-env NODE_ENV=development webpack src/index.js dist/react-customized-scrollbars.js",
+    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js dist/react-customized-scrollbars.min.js",
     "lint": "eslint src test examples",
     "test": "cross-env NODE_ENV=test karma start",
     "test:watch": "cross-env NODE_ENV=test karma start --auto-watch --no-single-run",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/igogo5yo/react-custom-scrollbars.git"
+    "url": "https://github.com/igogo5yo/react-customized-scrollbars.git"
   },
   "keywords": [
     "scroll",
@@ -29,9 +29,9 @@
   "author": "Malte Wessel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/igogo5yo/react-custom-scrollbars/issues"
+    "url": "https://github.com/igogo5yo/react-customized-scrollbars/issues"
   },
-  "homepage": "https://github.com/igogo5yo/react-custom-scrollbars",
+  "homepage": "https://github.com/igogo5yo/react-customized-scrollbars",
   "devDependencies": {
     "babel-cli": "^6.2.0",
     "babel-core": "^6.2.1",

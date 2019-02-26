@@ -39,6 +39,9 @@
 * `autoHeightMax`: (Number) Set a maximum height for auto-height mode (default: 200)
 * `universal`: (Boolean) Enable universal rendering (default: `false`)
     * [Learn how to use universal rendering](#link)
+* `innerHeight`: (Number|String) Actual height of container (*children.length * childrenHeight*).
+    * **Use this prop to avoid issues with react-virtualized on macOS with auto-hidden scrollbar.**
+    
 
 ### Methods
 

@@ -66,7 +66,7 @@ module.exports = {
     plugins: plugins,
     resolve: {
         alias: {
-            'react-custom-scrollbars': path.join(__dirname, '..', '..', 'src')
+            'react-customized-scrollbars': path.join(__dirname, '..', '..', 'src')
         },
         extensions: ['', '.js']
     },

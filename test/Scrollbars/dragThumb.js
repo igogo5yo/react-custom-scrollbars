@@ -1,4 +1,4 @@
-import { Scrollbars } from 'react-custom-scrollbars';
+import { Scrollbars } from 'react-customized-scrollbars';
 import { render, unmountComponentAtNode } from 'react-dom';
 import React from 'react';
 import simulant from 'simulant';
